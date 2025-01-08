@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://cartomiam.com#">
+
+  <rdf:Description rdf:about="http://cartomiam.com#fish_1">
+    <rdfs:label xml:lang="fr">Noix de Saint Jacques, fondue de poireaux et bisque de langoustine</rdfs:label>
+    <rdfs:label xml:lang="en">Roasted scallops, creamy leeks with scampi's bisque</rdfs:label>
+    <rdf:type rdf:resource="http://cartomiam.com#dish"/>
+    <ns0:has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</ns0:has_price>
+    <ns0:has_type rdf:resource="http://cartomiam.com#main_course"/>
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#langoustine">
+            <rdfs:label xml:lang="fr">Langoustine</rdfs:label>
+            <rdfs:label xml:lang="en">Scampi</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#poireau">
+            <rdfs:label xml:lang="fr">Poireau</rdfs:label>
+            <rdfs:label xml:lang="en">Leek</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#noix_saint_jacques">
+            <rdfs:label xml:lang="fr">Noix de Saint Jacques</rdfs:label>
+            <rdfs:label xml:lang="en">Scallops</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+  </rdf:Description>
+
+  <ns0:dish rdf:about="http://cartomiam.com#fish_2">
+    <rdfs:label xml:lang="fr">Médaillon de lotte, jus truffé, risotto au chorizo et asperges</rdfs:label>
+    <rdfs:label xml:lang="en">Steamed monkfish, truffle juice; risotto with asparagus and chorizo</rdfs:label>
+    <ns0:has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.0</ns0:has_price>
+    <ns0:has_type rdf:resource="http://cartomiam.com#main_course"/>
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#lotte">
+            <rdfs:label xml:lang="fr">Lotte</rdfs:label>
+            <rdfs:label xml:lang="en">Monkfish</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#truffe">
+            <rdfs:label xml:lang="fr">Truffe</rdfs:label>
+            <rdfs:label xml:lang="en">Truffle</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#chorizo">
+            <rdfs:label xml:lang="fr">Chorizo</rdfs:label>
+            <rdfs:label xml:lang="en">Chorizo</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#asperge">
+            <rdfs:label xml:lang="fr">Asperge</rdfs:label>
+            <rdfs:label xml:lang="en">Asparagus</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+  </ns0:dish>
+
+  <ns0:dish rdf:about="http://cartomiam.com#fish_3">
+    <rdfs:label xml:lang="fr">Sole Meunière</rdfs:label>
+    <rdfs:label xml:lang="en">Pan fried Dover Sole</rdfs:label>
+    <ns0:has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.0</ns0:has_price>
+    <ns0:has_type rdf:resource="http://cartomiam.com#main_course"/>
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#sole">
+            <rdfs:label xml:lang="fr">Sole</rdfs:label>
+            <rdfs:label xml:lang="en">Sole</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#farine">
+            <rdfs:label xml:lang="fr">Farine</rdfs:label>
+            <rdfs:label xml:lang="en">Flour</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+  </ns0:dish>
+
+  <ns0:dish rdf:about="http://cartomiam.com#fish_4">
+    <rdfs:label xml:lang="fr">Saumon cuit à l'unilatérale, petits légumes oublis, sauce Dieppoise</rdfs:label>
+    <rdfs:label xml:lang="en">Salmon, old vegetables, 'Dieppoise' sauce</rdfs:label>
+    <ns0:has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</ns0:has_price>
+    <ns0:has_type rdf:resource="http://cartomiam.com#main_course"/>
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#saumon">
+            <rdfs:label xml:lang="fr">Saumon</rdfs:label>
+            <rdfs:label xml:lang="en">Salmon</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#carotte">
+            <rdfs:label xml:lang="fr">Carotte</rdfs:label>
+            <rdfs:label xml:lang="en">Carrot</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#navet">
+            <rdfs:label xml:lang="fr">Navet</rdfs:label>
+            <rdfs:label xml:lang="en">Turnip</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+    <ns0:contains_product>
+      <rdf:Description>
+        <ns0:is_product>
+          <ns0:product rdf:about="http://cartomiam.com#sauce_dieppoise">
+            <rdfs:label xml:lang="fr">Sauce Dieppoise</rdfs:label>
+            <rdfs:label xml:lang="en">'Dieppoise' sauce</rdfs:label>
+            <ns0:is_vegetarian rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:is_vegetarian>
+          </ns0:product>
+        </ns0:is_product>
+
+        <ns0:has_quantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns0:has_quantity>
+      </rdf:Description>
+    </ns0:contains_product>
+
+  </ns0:dish>
+
+</rdf:RDF>

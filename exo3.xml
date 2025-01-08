@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://cartomiam.com#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <rdf:Description rdf:about="http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf">
+    <ns0:has_family>
+      <rdf:Description rdf:about="http://cartomiam.com#starters">
+        <rdfs:label xml:lang="fr">Entrées</rdfs:label>
+        <rdfs:label xml:lang="en">Starters</rdfs:label>
+      </rdf:Description>
+    </ns0:has_family>
+
+    <ns0:has_family>
+      <rdf:Description rdf:about="http://cartomiam.com#meats">
+        <rdfs:label xml:lang="fr">Viandes</rdfs:label>
+        <rdfs:label xml:lang="en">Meats</rdfs:label>
+      </rdf:Description>
+    </ns0:has_family>
+
+    <ns0:has_family>
+      <rdf:Description rdf:about="http://cartomiam.com#cheeses">
+        <rdfs:label xml:lang="fr">Fromages</rdfs:label>
+        <rdfs:label xml:lang="en">Cheeses</rdfs:label>
+      </rdf:Description>
+    </ns0:has_family>
+
+    <ns0:has_family>
+      <rdf:Description rdf:about="http://cartomiam.com#desserts">
+        <rdfs:label xml:lang="fr">Desserts</rdfs:label>
+        <rdfs:label xml:lang="en">Desserts</rdfs:label>
+      </rdf:Description>
+    </ns0:has_family>
+
+    <ns0:has_meal>
+      <rdf:Description rdf:about="http://cartomiam.com#kid_meal">
+        <rdfs:label xml:lang="fr">Menu des petits rois (-12 ans)</rdfs:label>
+        <rdfs:label xml:lang="en">Kids menu (-of 12 years)</rdfs:label>
+        <ns0:has_price rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</ns0:has_price>
+      </rdf:Description>
+    </ns0:has_meal>
+
+  </rdf:Description>
+
+</rdf:RDF>

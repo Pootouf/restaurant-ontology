@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/etien/ontologies/2024/11/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/etien/ontologies/2024/11/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:restaurant="http://www.univ-rouen.fr/ontologies/restaurant#">
+    <owl:Ontology rdf:about="http://www.univ-rouen.fr/ontologies/restaurant">
+        <rdfs:isDefinedBy>Axelle MAZUY, Etienne BINGINOT</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="fr">L’objectif de cette ontologie est de conceptualiser et modéliser les différents concepts autour de la gestion d’un restaurant. Celle-ci doit permettre de facilement représenter les données afin de pouvoir en retirer des informations compréhensibles. En formalisant ainsi l’ensemble des concepts autour du restaurant, il sera plus simple d’administrer les différents restaurants, peu importe leur type.</rdfs:label>
+        <rdfs:label xml:lang="en">The objective of this ontology is to conceptualize and model the different concepts around restaurant management. This must make it possible to easily represent the data in order to be able to extract understandable information from it. By formalizing all the concepts around the restaurant in this way, it will be simpler to administer the different restaurants, regardless of their type.</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#containsProduct -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#containsProduct"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasAllergen -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasAllergen"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasBeverage -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasBeverage"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasClient -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasClient"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasDish -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasDish"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasFamily -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasFamily"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasMeal -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasMeal"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasNumber"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasPrice -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasPrice"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#hasQuantity -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#hasQuantity"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#isAssociatedTo -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#isAssociatedTo"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#isProduct -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#isProduct"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#isVegetarian -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#isVegetarian"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#orderDate -->
+
+    <owl:AnnotationProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#orderDate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#price"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#quantity"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#AlcoholizedBeverage -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#AlcoholizedBeverage">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Allergen -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Allergen"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Beverage -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Beverage">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Consumable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#BreakfastMeal -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#BreakfastMeal">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Client -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Client"/>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Consumable -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Consumable">
+        <restaurant:containsProduct>
+            <rdf:Description>
+                <restaurant:hasQuantity>
+                    <rdf:Description>
+                        <rdf:type>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#quantity"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                            </owl:Restriction>
+                        </rdf:type>
+                    </rdf:Description>
+                </restaurant:hasQuantity>
+                <restaurant:isProduct rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Product"/>
+            </rdf:Description>
+        </restaurant:containsProduct>
+        <restaurant:hasPrice>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#price"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:hasPrice>
+        <restaurant:hasQuantity>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#quantity"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:hasQuantity>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#DessertDish -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#DessertDish">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Dish"/>
+        <owl:disjointWith rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#MainCourseDish"/>
+        <owl:disjointWith rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#StarterDish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#DinnerMeal -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#DinnerMeal">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Dish -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Consumable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Family -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Family">
+        <restaurant:hasBeverage rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Beverage"/>
+        <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Inventory -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Inventory">
+        <restaurant:containsProduct>
+            <rdf:Description>
+                <restaurant:hasQuantity>
+                    <rdf:Description>
+                        <rdf:type>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#quantity"/>
+                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                            </owl:Restriction>
+                        </rdf:type>
+                    </rdf:Description>
+                </restaurant:hasQuantity>
+                <restaurant:isProduct rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Product"/>
+            </rdf:Description>
+        </restaurant:containsProduct>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#LunchMeal -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#LunchMeal">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#MainCourseDish -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#MainCourseDish">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Meal -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Meal">
+        <restaurant:hasBeverage rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Beverage"/>
+        <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Dish"/>
+        <restaurant:hasPrice>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#price"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:hasPrice>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Menu -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Menu">
+        <restaurant:hasBeverage rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Beverage"/>
+        <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Dish"/>
+        <restaurant:hasFamily rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Family"/>
+        <restaurant:hasMeal rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Order -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Order">
+        <restaurant:hasBeverage rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Beverage"/>
+        <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Dish"/>
+        <restaurant:hasMeal rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
+        <restaurant:isAssociatedTo rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Table"/>
+        <restaurant:orderDate>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:orderDate>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Product -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Product">
+        <restaurant:hasAllergen rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Allergen"/>
+        <restaurant:hasPrice>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#price"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:hasPrice>
+        <restaurant:isVegetarian>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:isVegetarian>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#StarterDish -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#StarterDish">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#Table -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#Table">
+        <restaurant:hasClient rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Client"/>
+        <restaurant:hasNumber>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:hasNumber>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#WeekMeal -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#WeekMeal">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#WeekendMeal -->
+
+    <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#WeekendMeal">
+        <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdf:type>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <restaurant:orderDate>
+            <rdf:Description>
+                <rdf:type>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+                    </owl:Restriction>
+                </rdf:type>
+            </rdf:Description>
+        </restaurant:orderDate>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://cartomiam.com#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <rdf:Description rdf:about="http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf">
+    <ns0:has_family rdf:resource="http://cartomiam.com#fishes"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://cartomiam.com#fishes">
+    <rdfs:label xml:lang="fr">Poissons</rdfs:label>
+    <rdfs:label xml:lang="en">Fishes</rdfs:label>
+    <ns0:has_dish rdf:resource="http://cartomiam.com#fish_1"/>
+    <ns0:has_dish rdf:resource="http://cartomiam.com#fish_2"/>
+    <ns0:has_dish rdf:resource="http://cartomiam.com#fish_3"/>
+    <ns0:has_dish rdf:resource="http://cartomiam.com#fish_4"/>
+  </rdf:Description>
+
+  <rdf:Statement rdf:nodeID="genid1">
+    <rdf:subject rdf:resource="http://cartomiam.com#fishes"/>
+    <rdf:predicate rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    <rdf:object rdf:resource="http://cartomiam.com#family"/>
+    <rdfs:isDefinedBy xml:lang="fr">Axelle et Etienne</rdfs:isDefinedBy>
+    <rdfs:comment xml:lang="fr">Créé le 29/12/2024</rdfs:comment>
+  </rdf:Statement>
+
+</rdf:RDF>
