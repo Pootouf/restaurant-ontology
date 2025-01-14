@@ -5,14 +5,14 @@
 
   <rdf:Description rdf:about="http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf">
     <restaurant:hasFamily>
-      <rdf:Description rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#fishes">
+      <restaurant:Family rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#fishes">
         <rdfs:label xml:lang="fr">Poissons</rdfs:label>
         <rdfs:label xml:lang="en">Fishes</rdfs:label>
         <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_1"/>
         <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_2"/>
         <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_3"/>
         <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_4"/>
-      </rdf:Description>
+      </restaurant:Family>
     </restaurant:hasFamily>
 
     <rdf:type rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Menu"/>
