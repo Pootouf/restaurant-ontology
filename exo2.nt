@@ -1,21 +1,22 @@
-@prefix cartomiam: <http://cartomiam.com#> .
+@prefix restaurant: <http://www.univ-rouen.fr/ontologies/restaurant#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> cartomiam:has_family cartomiam:fishes .
+<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> restaurant:hasFamily restaurant:fishes .
+<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> rdf:type restaurant:Menu .
 
 _:fishes rdf:type rdf:Statement .
-_:fishes rdf:subject cartomiam:fishes .
+_:fishes rdf:subject restaurant:Fishes .
 _:fishes rdf:predicate rdf:type .
-_:fishes rdf:object cartomiam:family .
+_:fishes rdf:object restaurant:Family .
 _:fishes rdfs:isDefinedBy "Axelle et Etienne"@fr .
 _:fishes rdfs:comment "Créé le 29/12/2024"@fr .
 
-cartomiam:fishes rdfs:label "Poissons"@fr .
-cartomiam:fishes rdfs:label "Fishes"@en .
+restaurant:fishes rdfs:label "Poissons"@fr .
+restaurant:fishes rdfs:label "Fishes"@en .
 
-cartomiam:fishes cartomiam:has_dish cartomiam:fish_1 .
-cartomiam:fishes cartomiam:has_dish cartomiam:fish_2 .
-cartomiam:fishes cartomiam:has_dish cartomiam:fish_3 .
-cartomiam:fishes cartomiam:has_dish cartomiam:fish_4 .
+restaurant:fishes restaurant:hasDish restaurant:fish_1 .
+restaurant:fishes restaurant:hasDish restaurant:fish_2 .
+restaurant:fishes restaurant:hasDish restaurant:fish_3 .
+restaurant:fishes restaurant:hasDish restaurant:fish_4 .

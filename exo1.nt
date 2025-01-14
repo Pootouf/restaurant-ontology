@@ -1,155 +1,151 @@
-@prefix cartomiam: <http://cartomiam.com#> .
+@prefix restaurant: <http://www.univ-rouen.fr/ontologies/restaurant#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-cartomiam:fish_1 rdfs:label "Noix de Saint Jacques, fondue de poireaux et bisque de langoustine"@fr .
-cartomiam:fish_1 rdfs:label "Roasted scallops, creamy leeks with scampi's bisque"@en .
-cartomiam:fish_1 rdf:type cartomiam:dish .
-cartomiam:fish_1 cartomiam:has_price "24.0"^^xsd:double .
-cartomiam:fish_1 cartomiam:has_type cartomiam:main_course .
-cartomiam:fish_1 cartomiam:contains_product _:fish_1_product_1 .
-cartomiam:fish_1 cartomiam:contains_product _:fish_1_product_2 .
-cartomiam:fish_1 cartomiam:contains_product _:fish_1_product_3 .
+restaurant:fish_1 rdfs:label "Noix de Saint Jacques, fondue de poireaux et bisque de langoustine"@fr .
+restaurant:fish_1 rdfs:label "Roasted scallops, creamy leeks with scampi's bisque"@en .
+restaurant:fish_1 rdf:type restaurant:MainCourseDish .
+restaurant:fish_1 restaurant:hasPrice "24.0"^^xsd:double .
+restaurant:fish_1 restaurant:hasProductQuantity _:fish_1_product_1 .
+restaurant:fish_1 restaurant:hasProductQuantity _:fish_1_product_2 .
+restaurant:fish_1 restaurant:hasProductQuantity _:fish_1_product_3 .
 
-_:fish_1_product_1 cartomiam:is_product cartomiam:langoustine .
-_:fish_1_product_1 cartomiam:has_quantity "12"^^xsd:integer .
+_:fish_1_product_1 restaurant:isAssociatedToProduct restaurant:langoustine .
+_:fish_1_product_1 restaurant:hasQuantity "12"^^xsd:integer .
+_:fish_1_product_1 rdf:type restaurant:ProductQuantity .
 
-_:fish_1_product_2 cartomiam:is_product cartomiam:poireau .
-_:fish_1_product_2 cartomiam:has_quantity "4"^^xsd:integer .
+_:fish_1_product_2 restaurant:isAssociatedToProduct restaurant:poireau .
+_:fish_1_product_2 restaurant:hasQuantity "4"^^xsd:integer .
+_:fish_1_product_2 rdf:type restaurant:ProductQuantity .
 
-_:fish_1_product_3 cartomiam:is_product cartomiam:noix_saint_jacques .
-_:fish_1_product_3 cartomiam:has_quantity "6"^^xsd:integer .
+_:fish_1_product_3 restaurant:isAssociatedToProduct restaurant:noix_saint_jacques .
+_:fish_1_product_3 restaurant:hasQuantity "6"^^xsd:integer .
+_:fish_1_product_3 rdf:type restaurant:ProductQuantity .
 
-cartomiam:langoustine rdfs:label "Langoustine"@fr .
-cartomiam:langoustine rdfs:label "Scampi"@en .
-cartomiam:langoustine rdf:type cartomiam:product .
-cartomiam:langoustine cartomiam:is_vegetarian "false"^^xsd:boolean .
+restaurant:langoustine rdfs:label "Langoustine"@fr .
+restaurant:langoustine rdfs:label "Scampi"@en .
+restaurant:langoustine rdf:type restaurant:Product .
 
-cartomiam:poireau rdfs:label "Poireau"@fr .
-cartomiam:poireau rdfs:label "Leek"@en .
-cartomiam:poireau rdf:type cartomiam:product .
-cartomiam:poireau cartomiam:is_vegetarian "true"^^xsd:boolean .
+restaurant:poireau rdfs:label "Poireau"@fr .
+restaurant:poireau rdfs:label "Leek"@en .
+restaurant:poireau rdf:type restaurant:VegetarianProduct .
 
-cartomiam:noix_saint_jacques rdfs:label "Noix de Saint Jacques"@fr .
-cartomiam:noix_saint_jacques rdfs:label "Scallops"@en .
-cartomiam:noix_saint_jacques rdf:type cartomiam:product .
-cartomiam:noix_saint_jacques cartomiam:is_vegetarian "false"^^xsd:boolean .
-
+restaurant:noix_saint_jacques rdfs:label "Noix de Saint Jacques"@fr .
+restaurant:noix_saint_jacques rdfs:label "Scallops"@en .
+restaurant:noix_saint_jacques rdf:type restaurant:Product .
 
 
 
-cartomiam:fish_2 rdfs:label "Médaillon de lotte, jus truffé, risotto au chorizo et asperges"@fr .
-cartomiam:fish_2 rdfs:label "Steamed monkfish, truffle juice; risotto with asparagus and chorizo"@en .
-cartomiam:fish_2 rdf:type cartomiam:dish .
-cartomiam:fish_2 cartomiam:has_price "19.0"^^xsd:double .
-cartomiam:fish_2 cartomiam:has_type cartomiam:main_course .
-cartomiam:fish_2 cartomiam:contains_product _:fish_2_product_1 .
-cartomiam:fish_2 cartomiam:contains_product _:fish_2_product_2 .
-cartomiam:fish_2 cartomiam:contains_product _:fish_2_product_3 .
-cartomiam:fish_2 cartomiam:contains_product _:fish_2_product_4 .
 
-_:fish_2_product_1 cartomiam:is_product cartomiam:lotte .
-_:fish_2_product_1 cartomiam:has_quantity "1"^^xsd:integer .
+restaurant:fish_2 rdfs:label "Médaillon de lotte, jus truffé, risotto au chorizo et asperges"@fr .
+restaurant:fish_2 rdfs:label "Steamed monkfish, truffle juice; risotto with asparagus and chorizo"@en .
+restaurant:fish_2 rdf:type restaurant:MainCourseDish .
+restaurant:fish_2 restaurant:hasPrice "19.0"^^xsd:double .
+restaurant:fish_2 restaurant:hasProductQuantity _:fish_2_product_1 .
+restaurant:fish_2 restaurant:hasProductQuantity _:fish_2_product_2 .
+restaurant:fish_2 restaurant:hasProductQuantity _:fish_2_product_3 .
+restaurant:fish_2 restaurant:hasProductQuantity _:fish_2_product_4 .
 
-_:fish_2_product_2 cartomiam:is_product cartomiam:truffe .
-_:fish_2_product_2 cartomiam:has_quantity "4"^^xsd:integer .
+_:fish_2_product_1 restaurant:isAssociatedToProduct restaurant:lotte .
+_:fish_2_product_1 restaurant:hasQuantity "1"^^xsd:integer .
+_:fish_2_product_1 rdf:type restaurant:ProductQuantity .
 
-_:fish_2_product_3 cartomiam:is_product cartomiam:chorizo .
-_:fish_2_product_3 cartomiam:has_quantity "6"^^xsd:integer .
+_:fish_2_product_2 restaurant:isAssociatedToProduct restaurant:truffe .
+_:fish_2_product_2 restaurant:hasQuantity "4"^^xsd:integer .
+_:fish_2_product_2 rdf:type restaurant:ProductQuantity .
 
-_:fish_2_product_4 cartomiam:is_product cartomiam:asperge .
-_:fish_2_product_4 cartomiam:has_quantity "6"^^xsd:integer .
+_:fish_2_product_3 restaurant:isAssociatedToProduct restaurant:chorizo .
+_:fish_2_product_3 restaurant:hasQuantity "6"^^xsd:integer .
+_:fish_2_product_3 rdf:type restaurant:ProductQuantity .
 
-cartomiam:lotte rdfs:label "Lotte"@fr .
-cartomiam:lotte rdfs:label "Monkfish"@en .
-cartomiam:lotte rdf:type cartomiam:product .
-cartomiam:lotte cartomiam:is_vegetarian "false"^^xsd:boolean .
+_:fish_2_product_4 restaurant:isAssociatedToProduct restaurant:asperge .
+_:fish_2_product_4 restaurant:hasQuantity "6"^^xsd:integer .
+_:fish_2_product_4 rdf:type restaurant:ProductQuantity .
 
-cartomiam:truffe rdfs:label "Truffe"@fr .
-cartomiam:truffe rdfs:label "Truffle"@en .
-cartomiam:truffe rdf:type cartomiam:product .
-cartomiam:truffe cartomiam:is_vegetarian "true"^^xsd:boolean .
+restaurant:lotte rdfs:label "Lotte"@fr .
+restaurant:lotte rdfs:label "Monkfish"@en .
+restaurant:lotte rdf:type restaurant:Product .
 
-cartomiam:asperge rdfs:label "Asperge"@fr .
-cartomiam:asperge rdfs:label "Asparagus"@en .
-cartomiam:asperge rdf:type cartomiam:product .
-cartomiam:asperge cartomiam:is_vegetarian "true"^^xsd:boolean .
+restaurant:truffe rdfs:label "Truffe"@fr .
+restaurant:truffe rdfs:label "Truffle"@en .
+restaurant:truffe rdf:type restaurant:VegetarianProduct .
 
-cartomiam:chorizo rdfs:label "Chorizo"@fr .
-cartomiam:chorizo rdfs:label "Chorizo"@en .
-cartomiam:chorizo rdf:type cartomiam:product .
-cartomiam:chorizo cartomiam:is_vegetarian "false"^^xsd:boolean .
+restaurant:asperge rdfs:label "Asperge"@fr .
+restaurant:asperge rdfs:label "Asparagus"@en .
+restaurant:asperge rdf:type restaurant:VegetarianProduct .
+
+restaurant:chorizo rdfs:label "Chorizo"@fr .
+restaurant:chorizo rdfs:label "Chorizo"@en .
+restaurant:chorizo rdf:type restaurant:Product .
 
 
 
 
 
-cartomiam:fish_3 rdfs:label "Sole Meunière"@fr .
-cartomiam:fish_3 rdfs:label "Pan fried Dover Sole"@en .
-cartomiam:fish_3 rdf:type cartomiam:dish .
-cartomiam:fish_3 cartomiam:has_price "29.0"^^xsd:double .
-cartomiam:fish_3 cartomiam:has_type cartomiam:main_course .
-cartomiam:fish_3 cartomiam:contains_product _:fish_3_product_1 .
-cartomiam:fish_3 cartomiam:contains_product _:fish_3_product_2 .
+restaurant:fish_3 rdfs:label "Sole Meunière"@fr .
+restaurant:fish_3 rdfs:label "Pan fried Dover Sole"@en .
+restaurant:fish_3 rdf:type restaurant:MainCourseDish .
+restaurant:fish_3 restaurant:hasPrice "29.0"^^xsd:double .
+restaurant:fish_3 restaurant:hasProductQuantity _:fish_3_product_1 .
+restaurant:fish_3 restaurant:hasProductQuantity _:fish_3_product_2 .
 
-_:fish_3_product_1 cartomiam:is_product cartomiam:sole .
-_:fish_3_product_1 cartomiam:has_quantity "4"^^xsd:integer .
+_:fish_3_product_1 restaurant:isAssociatedToProduct restaurant:sole .
+_:fish_3_product_1 restaurant:hasQuantity "4"^^xsd:integer .
+_:fish_3_product_1 rdf:type restaurant:ProductQuantity .
 
-_:fish_3_product_2 cartomiam:is_product cartomiam:farine .
-_:fish_3_product_2 cartomiam:has_quantity "50"^^xsd:integer .
+_:fish_3_product_2 restaurant:isAssociatedToProduct restaurant:farine .
+_:fish_3_product_2 restaurant:hasQuantity "50"^^xsd:integer .
+_:fish_3_product_2 rdf:type restaurant:ProductQuantity .
 
-cartomiam:sole rdfs:label "Sole"@fr .
-cartomiam:sole rdfs:label "Sole"@en .
-cartomiam:sole rdf:type cartomiam:product .
-cartomiam:sole cartomiam:is_vegetarian "false"^^xsd:boolean .
+restaurant:sole rdfs:label "Sole"@fr .
+restaurant:sole rdfs:label "Sole"@en .
+restaurant:sole rdf:type restaurant:Product .
 
-cartomiam:farine rdfs:label "Farine"@fr .
-cartomiam:farine rdfs:label "Flour"@en .
-cartomiam:farine rdf:type cartomiam:product .
-cartomiam:farine cartomiam:is_vegetarian "true"^^xsd:boolean .
-
+restaurant:farine rdfs:label "Farine"@fr .
+restaurant:farine rdfs:label "Flour"@en .
+restaurant:farine rdf:type restaurant:VegetarianProduct .
 
 
 
-cartomiam:fish_4 rdfs:label "Saumon cuit à l'unilatérale, petits légumes oublis, sauce Dieppoise"@fr .
-cartomiam:fish_4 rdfs:label "Salmon, old vegetables, 'Dieppoise' sauce"@en .
-cartomiam:fish_4 rdf:type cartomiam:dish .
-cartomiam:fish_4 cartomiam:has_price "15.0"^^xsd:double .
-cartomiam:fish_4 cartomiam:has_type cartomiam:main_course .
-cartomiam:fish_4 cartomiam:contains_product _:fish_4_product_1 .
-cartomiam:fish_4 cartomiam:contains_product _:fish_4_product_2 .
-cartomiam:fish_4 cartomiam:contains_product _:fish_4_product_3 .
-cartomiam:fish_4 cartomiam:contains_product _:fish_4_product_4 .
 
-_:fish_4_product_1 cartomiam:is_product cartomiam:saumon .
-_:fish_4_product_1 cartomiam:has_quantity "1"^^xsd:integer .
+restaurant:fish_4 rdfs:label "Saumon cuit à l'unilatérale, petits légumes oublis, sauce Dieppoise"@fr .
+restaurant:fish_4 rdfs:label "Salmon, old vegetables, 'Dieppoise' sauce"@en .
+restaurant:fish_4 rdf:type restaurant:MainCourseDish .
+restaurant:fish_4 restaurant:hasPrice "15.0"^^xsd:double .
+restaurant:fish_4 restaurant:hasProductQuantity _:fish_4_product_1 .
+restaurant:fish_4 restaurant:hasProductQuantity _:fish_4_product_2 .
+restaurant:fish_4 restaurant:hasProductQuantity _:fish_4_product_3 .
+restaurant:fish_4 restaurant:hasProductQuantity _:fish_4_product_4 .
 
-_:fish_4_product_2 cartomiam:is_product cartomiam:carotte .
-_:fish_4_product_2 cartomiam:has_quantity "6"^^xsd:integer .
+_:fish_4_product_1 restaurant:isAssociatedToProduct restaurant:saumon .
+_:fish_4_product_1 restaurant:hasQuantity "1"^^xsd:integer .
+_:fish_4_product_1 rdf:type restaurant:ProductQuantity .
 
-_:fish_4_product_3 cartomiam:is_product cartomiam:navet .
-_:fish_4_product_3 cartomiam:has_quantity "4"^^xsd:integer .
+_:fish_4_product_2 restaurant:isAssociatedToProduct restaurant:carotte .
+_:fish_4_product_2 restaurant:hasQuantity "6"^^xsd:integer .
+_:fish_4_product_2 rdf:type restaurant:ProductQuantity .
 
-_:fish_4_product_4 cartomiam:is_product cartomiam:sauce_dieppoise .
-_:fish_4_product_4 cartomiam:has_quantity "4"^^xsd:integer .
+_:fish_4_product_3 restaurant:isAssociatedToProduct restaurant:navet .
+_:fish_4_product_3 restaurant:hasQuantity "4"^^xsd:integer .
+_:fish_4_product_3 rdf:type restaurant:ProductQuantity .
 
-cartomiam:saumon rdfs:label "Saumon"@fr .
-cartomiam:saumon rdfs:label "Salmon"@en .
-cartomiam:saumon rdf:type cartomiam:product .
-cartomiam:saumon cartomiam:is_vegetarian "false"^^xsd:boolean .
+_:fish_4_product_4 restaurant:isAssociatedToProduct restaurant:sauce_dieppoise .
+_:fish_4_product_4 restaurant:hasQuantity "4"^^xsd:integer .
+_:fish_4_product_4 rdf:type restaurant:ProductQuantity .
 
-cartomiam:carotte rdfs:label "Carotte"@fr .
-cartomiam:carotte rdfs:label "Carrot"@en .
-cartomiam:carotte rdf:type cartomiam:product .
-cartomiam:carotte cartomiam:is_vegetarian "true"^^xsd:boolean .
+restaurant:saumon rdfs:label "Saumon"@fr .
+restaurant:saumon rdfs:label "Salmon"@en .
+restaurant:saumon rdf:type restaurant:Product .
 
-cartomiam:navet rdfs:label "Navet"@fr .
-cartomiam:navet rdfs:label "Turnip"@en .
-cartomiam:navet rdf:type cartomiam:product .
-cartomiam:navet cartomiam:is_vegetarian "true"^^xsd:boolean .
+restaurant:carotte rdfs:label "Carotte"@fr .
+restaurant:carotte rdfs:label "Carrot"@en .
+restaurant:carotte rdf:type restaurant:VegetarianProduct .
 
-cartomiam:sauce_dieppoise rdfs:label "Sauce Dieppoise"@fr .
-cartomiam:sauce_dieppoise rdfs:label "'Dieppoise' sauce"@en .
-cartomiam:sauce_dieppoise rdf:type cartomiam:product .
-cartomiam:sauce_dieppoise cartomiam:is_vegetarian "false"^^xsd:boolean .
+restaurant:navet rdfs:label "Navet"@fr .
+restaurant:navet rdfs:label "Turnip"@en .
+restaurant:navet rdf:type restaurant:VegetarianProduct .
+
+restaurant:sauce_dieppoise rdfs:label "Sauce Dieppoise"@fr .
+restaurant:sauce_dieppoise rdfs:label "'Dieppoise' sauce"@en .
+restaurant:sauce_dieppoise rdf:type restaurant:Product .

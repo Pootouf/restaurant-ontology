@@ -1,33 +1,38 @@
-@prefix cartomiam: <http://cartomiam.com#> .
+@prefix restaurant: <http://www.univ-rouen.fr/ontologies/restaurant#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> cartomiam:has_family cartomiam:starters .
-cartomiam:starters rdfs:label "Entrées"@fr .
-cartomiam:starters rdfs:label "Starters"@en .
+<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> restaurant:hasFamily restaurant:starters .
+restaurant:starters rdfs:label "Entrées"@fr .
+restaurant:starters rdfs:label "Starters"@en .
+restaurant:starters rdf:type restaurant:Family .
 
 
 
-<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> cartomiam:has_family cartomiam:meats .
-cartomiam:meats rdfs:label "Viandes"@fr .
-cartomiam:meats rdfs:label "Meats"@en .
+<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> restaurant:hasFamily restaurant:meats .
+restaurant:meats rdfs:label "Viandes"@fr .
+restaurant:meats rdfs:label "Meats"@en .
+restaurant:meats rdf:type restaurant:Family .
 
 
 
-<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> cartomiam:has_family cartomiam:cheeses .
-cartomiam:cheeses rdfs:label "Fromages"@fr .
-cartomiam:cheeses rdfs:label "Cheeses"@en .
+<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> restaurant:hasFamily restaurant:cheeses .
+restaurant:cheeses rdfs:label "Fromages"@fr .
+restaurant:cheeses rdfs:label "Cheeses"@en .
+restaurant:cheeses rdf:type restaurant:Family .
 
 
 
-<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> cartomiam:has_family cartomiam:desserts .
-cartomiam:desserts rdfs:label "Desserts"@fr .
-cartomiam:desserts rdfs:label "Desserts"@en .
+<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> restaurant:hasFamily restaurant:desserts .
+restaurant:desserts rdfs:label "Desserts"@fr .
+restaurant:desserts rdfs:label "Desserts"@en .
+restaurant:desserts rdf:type restaurant:Family .
 
 
 
-<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> cartomiam:has_meal cartomiam:kid_meal .
-cartomiam:kid_meal rdfs:label "Menu des petits rois (-12 ans)"@fr .
-cartomiam:kid_meal rdfs:label "Kids menu (-of 12 years)"@en .
-cartomiam:kid_meal cartomiam:has_price "12.0"^^xsd:double .
+<http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf> restaurant:hasMeal restaurant:kid_meal .
+restaurant:kid_meal rdfs:label "Menu des petits rois (-12 ans)"@fr .
+restaurant:kid_meal rdfs:label "Kids menu (-of 12 years)"@en .
+restaurant:kid_meal restaurant:hasPrice "12.0"^^xsd:double .
+restaurant:kid_meal rdf:type restaurant:Meal .
