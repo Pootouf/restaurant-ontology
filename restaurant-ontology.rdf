@@ -388,24 +388,266 @@
     <owl:Class rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#WeekendMeal">
         <rdfs:subClassOf rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Meal"/>
     </owl:Class>
-    <rdf:Description>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-            </owl:Restriction>
-        </rdf:type>
-    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.univ-rouen.fr/ontologies/restaurant#fish_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#fish_1">
+        <rdfs:label xml:lang="fr">Noix de Saint Jacques, fondue de poireaux et bisque de langoustine</rdfs:label>
+        <rdfs:label xml:lang="en">Roasted scallops, creamy leeks with scampi's bisque</rdfs:label>
+        <rdf:type rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#MainCourseDish"/>
+        <restaurant:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.0</restaurant:hasPrice>
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:Product rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#langoustine">
+                <rdfs:label xml:lang="fr">Langoustine</rdfs:label>
+                <rdfs:label xml:lang="en">Scampi</rdfs:label>
+            </restaurant:Product>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:VegetarianProduct rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#poireau">
+                <rdfs:label xml:lang="fr">Poireau</rdfs:label>
+                <rdfs:label xml:lang="en">Leek</rdfs:label>
+            </restaurant:VegetarianProduct>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:Product rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#noix_saint_jacques">
+                <rdfs:label xml:lang="fr">Noix de Saint Jacques</rdfs:label>
+                <rdfs:label xml:lang="en">Scallops</rdfs:label>
+            </restaurant:Product>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#fish_2">
+        <rdfs:label xml:lang="fr">Médaillon de lotte, jus truffé, risotto au chorizo et asperges</rdfs:label>
+        <rdfs:label xml:lang="en">Steamed monkfish, truffle juice; risotto with asparagus and chorizo</rdfs:label>
+        <rdf:type rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#MainCourseDish"/>
+        <restaurant:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.0</restaurant:hasPrice>
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:Product rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#lotte">
+                <rdfs:label xml:lang="fr">Lotte</rdfs:label>
+                <rdfs:label xml:lang="en">Monkfish</rdfs:label>
+            </restaurant:Product>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:VegetarianProduct rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#truffe">
+                <rdfs:label xml:lang="fr">Truffe</rdfs:label>
+                <rdfs:label xml:lang="en">Truffle</rdfs:label>
+            </restaurant:VegetarianProduct>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:Product rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#chorizo">
+                <rdfs:label xml:lang="fr">Chorizo</rdfs:label>
+                <rdfs:label xml:lang="en">Chorizo</rdfs:label>
+            </restaurant:Product>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:VegetarianProduct rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#asperge">
+                <rdfs:label xml:lang="fr">Asperge</rdfs:label>
+                <rdfs:label xml:lang="en">Asparagus</rdfs:label>
+            </restaurant:VegetarianProduct>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#fish_3">
+        <rdfs:label xml:lang="fr">Sole Meunière</rdfs:label>
+        <rdfs:label xml:lang="en">Pan fried Dover Sole</rdfs:label>
+        <rdf:type rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#MainCourseDish"/>
+        <restaurant:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.0</restaurant:hasPrice>
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:Product rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#sole">
+                <rdfs:label xml:lang="fr">Sole</rdfs:label>
+                <rdfs:label xml:lang="en">Sole</rdfs:label>
+            </restaurant:Product>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:VegetarianProduct rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#farine">
+                <rdfs:label xml:lang="fr">Farine</rdfs:label>
+                <rdfs:label xml:lang="en">Flour</rdfs:label>
+            </restaurant:VegetarianProduct>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#fish_4">
+        <rdfs:label xml:lang="fr">Saumon cuit à l'unilatérale, petits légumes oublis, sauce Dieppoise</rdfs:label>
+        <rdfs:label xml:lang="en">Salmon, old vegetables, 'Dieppoise' sauce</rdfs:label>
+        <rdf:type rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#MainCourseDish"/>
+        <restaurant:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">15.0</restaurant:hasPrice>
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:Product rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#saumon">
+                <rdfs:label xml:lang="fr">Saumon</rdfs:label>
+                <rdfs:label xml:lang="en">Salmon</rdfs:label>
+            </restaurant:Product>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:VegetarianProduct rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#carotte">
+                <rdfs:label xml:lang="fr">Carotte</rdfs:label>
+                <rdfs:label xml:lang="en">Carrot</rdfs:label>
+            </restaurant:VegetarianProduct>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:VegetarianProduct rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#navet">
+                <rdfs:label xml:lang="fr">Navet</rdfs:label>
+                <rdfs:label xml:lang="en">Turnip</rdfs:label>
+            </restaurant:VegetarianProduct>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+
+        <restaurant:hasProductQuantity>
+        <restaurant:ProductQuantity>
+            <restaurant:isAssociatedToProduct>
+            <restaurant:Product rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#sauce_dieppoise">
+                <rdfs:label xml:lang="fr">Sauce Dieppoise</rdfs:label>
+                <rdfs:label xml:lang="en">'Dieppoise' sauce</rdfs:label>
+            </restaurant:Product>
+            </restaurant:isAssociatedToProduct>
+
+            <restaurant:hasQuantity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</restaurant:hasQuantity>
+        </restaurant:ProductQuantity>
+        </restaurant:hasProductQuantity>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.hotelsparouen.com/pdf/Menu-brasserie.pdf">
+        <restaurant:hasFamily>
+            <restaurant:Family rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#fishes">
+                <rdfs:label xml:lang="fr">Poissons</rdfs:label>
+                <rdfs:label xml:lang="en">Fishes</rdfs:label>
+                <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_1"/>
+                <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_2"/>
+                <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_3"/>
+                <restaurant:hasDish rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#fish_4"/>
+            </restaurant:Family>
+        </restaurant:hasFamily>
+        <restaurant:hasFamily>
+        
+        <restaurant:Family rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#starters">
+            <rdfs:label xml:lang="fr">Entrées</rdfs:label>
+            <rdfs:label xml:lang="en">Starters</rdfs:label>
+        </restaurant:Family>
+        </restaurant:hasFamily>
+
+        <restaurant:hasFamily>
+        <restaurant:Family rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#meats">
+            <rdfs:label xml:lang="fr">Viandes</rdfs:label>
+            <rdfs:label xml:lang="en">Meats</rdfs:label>
+        </restaurant:Family>
+        </restaurant:hasFamily>
+
+        <restaurant:hasFamily>
+        <restaurant:Family rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#cheeses">
+            <rdfs:label xml:lang="fr">Fromages</rdfs:label>
+            <rdfs:label xml:lang="en">Cheeses</rdfs:label>
+        </restaurant:Family>
+        </restaurant:hasFamily>
+
+        <restaurant:hasFamily>
+        <restaurant:Family rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#desserts">
+            <rdfs:label xml:lang="fr">Desserts</rdfs:label>
+            <rdfs:label xml:lang="en">Desserts</rdfs:label>
+        </restaurant:Family>
+        </restaurant:hasFamily>
+
+        <restaurant:hasMeal>
+        <restaurant:Meal rdf:about="http://www.univ-rouen.fr/ontologies/restaurant#kid_meal">
+            <rdfs:label xml:lang="fr">Menu des petits rois (-12 ans)</rdfs:label>
+            <rdfs:label xml:lang="en">Kids menu (-of 12 years)</rdfs:label>
+            <restaurant:hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</restaurant:hasPrice>
+        </restaurant:Meal>
+        </restaurant:hasMeal>
+
+        <rdf:type rdf:resource="http://www.univ-rouen.fr/ontologies/restaurant#Menu"/>
+    </owl:NamedIndividual>
+
     <rdf:Description>
         <rdf:type>
             <owl:Restriction>
@@ -421,6 +663,24 @@
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdf:type>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdf:type>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
             </owl:Restriction>
         </rdf:type>
     </rdf:Description>
